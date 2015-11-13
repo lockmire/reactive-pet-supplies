@@ -26,7 +26,7 @@ object Database {
     val connection = driver.connection(List("localhost"))
 
     val db = connection("petsupplies")
-    db.collection("petsupplies")
+    db.collection("products")
   }
 
   def findProducts(): Future[List[BSONDocument]] = {
